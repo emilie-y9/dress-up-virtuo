@@ -25,10 +25,10 @@
 
   button.addEventListener('click', function onClick () {
     const car = VIRTUO.getCar();
-    const begin = document.querySelector('#rental .js-begin').value;
-    const end = document.querySelector('#rental .js-end').value;
-    const distance = document.querySelector('#rental .js-distance').value;
-    const option = document.querySelector('#rental .js-option').checked;
+    const begin = document.querySelector('#js-rental-begin').value;
+    const end = document.querySelector('#js-rental-end').value;
+    const distance = document.querySelector('#js-rental-distance').value;
+    const option = document.querySelector('#js-rental-option').checked;
     const actors = VIRTUO.payActors(car, begin, end, distance, option);
 
     render(actors);
